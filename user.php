@@ -16,7 +16,7 @@ class user
         $this->mysqli = $this->setDatabaseConnection();
     }
     function setDatabaseConnection() {
-        $mysqli = new mysqli('localhost', 'root', '', 'digiants');
+        $mysqli = new mysqli('boss1280.beget.tech', 'boss1280_heroku', 'Sashsa96e', 'boss1280_heroku');
 
         if ($mysqli->connect_errno) {
             exit("MySQL connection error: " . $mysqli->connect_error);
