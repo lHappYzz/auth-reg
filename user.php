@@ -85,7 +85,7 @@ class user
         } else {
             throw new Exception('Wrong email.');
         }
-        if (empty($this->password) || mb_strlen($this->password) > 255) {
+        if (empty($this->password) || strlen(utf8_decode($this->password))> 255) {
             throw new Exception('Wrong password.');
         }
     }
